@@ -23,3 +23,13 @@ string output(int* vector, int size) {
 
 	return msg;
 }
+
+void insertion_sort_asc(int* vector, int length) {
+	for (int i = 1; i < length; i++)
+	{
+		for (int j = i; j > 0 && *(vector + j -1 ) > *(vector + j); j--)
+		{
+			swap(*(vector + j), *(vector + j - 1));
+		}
+	}
+}

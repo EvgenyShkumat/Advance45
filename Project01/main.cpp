@@ -4,6 +4,7 @@ using namespace std;
 
 void random_init(int* vector, int size, int min, int max);
 string output(int* vector, int size);
+void insertion_sort_asc(int* vector, int length);
 
 int main() {
 	int size1 = 5;
@@ -17,6 +18,9 @@ int main() {
 	int* vector2 = new int[size2];
 	random_init(vector2, size2, 0, 100);
 	
+	insertion_sort_asc(vector1, size1);
+	insertion_sort_asc(vector2, size2);
+
 	cout << "Vector 1:\n" << output(vector1, size1) << endl;
 	cout << "Vector 2:\n" << output(vector2, size2) << endl;
 
